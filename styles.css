@@ -71,7 +71,7 @@ header a {
   justify-content: space-evenly;
   margin-right: 10px;
   padding: 10px;
-  gap: 5px;
+  gap: 10px;
 }
 
 .boxicons button {
@@ -86,6 +86,7 @@ header a {
   text-align: left;
   border-radius: 10px;
   border: 2px solid white;
+  box-shadow: 0px 0px 25px violet;
   background-color: transparent;
   color: black;
   transition: all 0.2s ease-in 0s;
@@ -93,9 +94,9 @@ header a {
 }
 
 .boxicons button:hover {
-  background-color: rgb(150, 93, 248);
+  background: linear-gradient(120deg, rgb(206, 29, 206), violet, violet, blue);
   box-shadow: 0 0 25px rgb(216, 162, 255);
-  border: 2px solid rgb(150, 66, 210);
+  border: 2px solid rgb(255, 255, 255);
 }
 
 .boxicons button:active {
@@ -117,6 +118,7 @@ header a {
 }
 
 .hero {
+  margin-top:10px;
   position: relative;
   display: flex;
   width: 100%;
@@ -236,7 +238,6 @@ header a {
 .hero-vid-box {
   position: absolute;
   right: 3%;
-  
 }
 
 .hero-vid-box video {
@@ -247,13 +248,13 @@ header a {
 .scroll-down {
   height: 50px;
   width: 30px;
-  border: 3px solid lightgray;
+  border: 3px solid rgb(122, 48, 138);
   position: absolute;
   left: 49%;
-  bottom: 8%;
+  bottom: 5%;
   border-radius: 50px;
   cursor: pointer;
-  box-shadow: 0 0 25px rgba(103, 57, 134, 0.477);
+  box-shadow: 0px 0px 15px violet;
 }
 
 .scroll-down::before,
@@ -264,7 +265,8 @@ header a {
   left: 30%;
   height: 10px;
   width: 10px;
-  border: 3px solid hsl(282, 100%, 78%);
+  border: 2px solid;
+  box-shadow: 2px 2px 2px violet;
   transform: rotate(45deg);
   border-top: transparent;
   border-left: transparent;
@@ -279,8 +281,8 @@ header a {
     opacity: 0;
   }
 
-  30%,
-  60% {
+  10%,
+  40% {
     opacity: 1;
   }
   100% {
@@ -318,7 +320,7 @@ header a {
 
 .info-cards {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto;
   gap: 20px;
   width: 100%;
   height: 100%;
@@ -327,66 +329,85 @@ header a {
 
 .card {
   display: flex;
-  align-items: flex-start;
   justify-content: center;
-  position: relative;
-  width: auto;
-  height: 40vh;
-  overflow: hidden;
-  border: 2px solid grey;
+  height: 50vh;
+  border: 2px solid rgb(96, 2, 63);
   border-radius: 20px;
   background-color: #080020b7;
+  box-shadow: 0 0 10px violet;
 }
 
-.card img {
-  width: 80%;
-  height: 50%;
-  object-fit: cover;
+.card:hover {
+  border: 2px solid violet;
+
+  box-shadow: 0 0 25px rgb(255, 167, 255);
 }
 
-.card h1 {
-  position: absolute;
+
+.card:nth-child(2) img {
+  margin-left: 30px;
+}
+
+.card:nth-child(2) p {
+  max-width: 80%;
+  font-size: 18px;
+  font-family: cursive;
   margin: 0;
-  bottom: 40%;
-  left: 5%;
-  font-size: 25px;
-  z-index: 1;
-  color: lightgray;
 }
-.card p {
-  position: absolute;
-  bottom: 3%;
-  left: 5%;
-  z-index: 1;
-  font-size: 13px;
-  line-height: 20px;
+.card:nth-child(2) span {
+  font-size: 25px;
+  font-weight: bold;
 }
 
-.card video {
-  margin-top: 10%;
-  object-fit: cover;
-  width: 70%;
-  height: 70%;
-  mix-blend-mode: lighten;
+.card:nth-child(2) h1 {
+  position: relative;
+  font-weight: bolder;
+  font-size: 2em;
+  font-family: cursive;
+}
+
+.card:nth-child(2) about {
+  padding: 20px 30px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.spiral {
+  position: absolute;
+  width: 90%;
+  height: 100vh;
+ 
+  z-index: -1;
+  mix-blend-mode: hard-light;
 }
 
 .card:nth-child(3) {
-  grid-row: span 2;
-  height: 83vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  
 }
 
-.card:nth-child(3) p {
-  bottom: 12%;
+.card:nth-child(3) ul {
+  list-style: none;
+  font-size: 1.5em;
+  font-family: monospace;
 }
 
+.card:nth-child(3) li {
+  margin-top: 20px;
+}
 .card:nth-child(3) h1 {
-  bottom: 21%;
+  font-family: monospace;
+  font-size: 2rem;
+  margin: 1px 0px;
 }
-
-.card:nth-child(4) {
-  grid-column: span 2;
-}
-
-.card:nth-child(4)p {
-  max-width: 650%;
+.card:nth-child(3) img {
+  position: absolute;
+  width: 60%;
+  mix-blend-mode: lighten;
+  right: -0%;
+  
 }
