@@ -118,7 +118,7 @@ header a {
 }
 
 .hero {
-  margin-top:10px;
+  margin-top: 10px;
   position: relative;
   display: flex;
   width: 100%;
@@ -325,11 +325,13 @@ header a {
   width: 100%;
   height: 100%;
   margin-top: 30px;
+  gap: 10%;
 }
 
 .card {
   display: flex;
   justify-content: center;
+  corner-shape: scoop superellipse(1) scoop;
   height: 50vh;
   border: 2px solid rgb(96, 2, 63);
   border-radius: 20px;
@@ -342,7 +344,6 @@ header a {
 
   box-shadow: 0 0 25px rgb(255, 167, 255);
 }
-
 
 .card:nth-child(2) img {
   margin-left: 30px;
@@ -377,7 +378,7 @@ header a {
   position: absolute;
   width: 90%;
   height: 100vh;
- 
+
   z-index: -1;
   mix-blend-mode: hard-light;
 }
@@ -387,7 +388,6 @@ header a {
   align-items: center;
   flex-direction: column;
   padding: 30px;
-  
 }
 
 .card:nth-child(3) ul {
@@ -409,5 +409,148 @@ header a {
   width: 60%;
   mix-blend-mode: lighten;
   right: -0%;
-  
+}
+
+.my-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  align-items: center;
+  width: 80%;
+  height: 100vh;
+  margin-top: 200px;
+
+  margin-bottom: 400px;
+}
+
+.project-card {
+  display: flex;
+  width: 90%;
+  height: 40%;
+
+  align-items: center;
+
+  gap: 10%;
+  justify-content: center;
+}
+
+.project-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.project-video video {
+  object-fit: cover;
+  width: 100%;
+  box-shadow: 0 0 10px lightgray;
+  border-radius: 10px;
+}
+
+.project-img:hover {
+  box-shadow: 0 0 15px violet;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 50%;
+  padding-left: 10%;
+}
+.project-info h1 {
+  width: 90%;
+  font-size: 25px;
+  font-weight: bold;
+  text-wrap: nowarp;
+  margin-top: 0;
+  max-width: 450px;
+}
+
+.project-info p {
+  width: 90%;
+  font-size: 15px;
+  max-width: 400px;
+  min-width: 300px;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.project-info button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  letter-spacing: 2px;
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 5px 10px;
+  gap: 8px;
+  color: white;
+  border: 2px solid rgb(114, 35, 170);
+  background-color: rgb(52, 6, 83);
+  box-shadow: 0 0 25px rgb(98, 24, 150);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 40px;
+}
+
+.project-info button:hover {
+  box-shadow: 0 0 25px rgb(201, 141, 248);
+}
+
+.certificates {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.certi-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 80px;
+  justify-content: space-evenly;
+  gap: 40px;
+}
+
+.certi-container div {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.certi-container div img {
+  width: 80%;
+  border-radius: 5px;
+  border: solid 1px purple;
+  box-shadow: 0 0 15px violet;
+  transition: all 1s ease-in-out 0.2s;
+}
+.certi-container img:hover {
+  width: 120%;
+  cursor: pointer;
+
+  box-shadow: 0 0 35px violet;
+}
+
+.certi-container div h2 {
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
