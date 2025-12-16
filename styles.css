@@ -113,6 +113,7 @@ header a {
 }
 
 .blackhole-box video {
+  
   width: 100%;
   margin-top: -23.5%;
 }
@@ -237,10 +238,12 @@ header a {
 
 .hero-vid-box {
   position: absolute;
-  right: 3%;
+  right: 0%;
+
 }
 
 .hero-vid-box video {
+  margin-left: 100px;
   height: 900px;
   mix-blend-mode: lighten;
 }
@@ -331,7 +334,7 @@ header a {
 .card {
   display: flex;
   justify-content: center;
-  corner-shape: scoop superellipse(1) scoop;
+  
   height: 50vh;
   border: 2px solid rgb(96, 2, 63);
   border-radius: 20px;
@@ -339,9 +342,12 @@ header a {
   box-shadow: 0 0 10px violet;
 }
 
+
+
+
 .card:hover {
   border: 2px solid violet;
-
+  
   box-shadow: 0 0 25px rgb(255, 167, 255);
 }
 
@@ -378,7 +384,7 @@ header a {
   position: absolute;
   width: 90%;
   height: 100vh;
-
+  
   z-index: -1;
   mix-blend-mode: hard-light;
 }
@@ -411,6 +417,36 @@ header a {
   right: -0%;
 }
 
+
+.blue-spiral {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  margin-top:100px ;
+  margin-bottom: 0;
+
+  overflow: hidden;
+}
+.blue-spiral video{
+  
+  
+  
+  margin-bottom: 500px;
+  mix-blend-mode: lighten;
+
+}
+.blue-spiral h2{
+  font-family: monospace;
+  position: absolute;
+  bottom: 5%;
+  background:transparent;
+
+  
+}
+
 .my-projects {
   display: flex;
   flex-direction: column;
@@ -418,7 +454,7 @@ header a {
   align-items: center;
   width: 80%;
   height: 100vh;
-  margin-top: 200px;
+ 
 
   margin-bottom: 400px;
 }
@@ -508,11 +544,21 @@ header a {
 }
 
 .certificates {
+  position: relative;
   width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.certificates video{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: lighten;
+  
 }
 
 .certi-container {
@@ -545,6 +591,7 @@ header a {
 .certi-container img:hover {
   width: 120%;
   cursor: pointer;
+  border: 2px double rgb(15, 202, 219);
 
   box-shadow: 0 0 35px violet;
 }
