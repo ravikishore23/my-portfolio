@@ -109,7 +109,16 @@ header a {
   position: absolute;
   width: 40px;
   transform: rotate(-30deg);
-  animation: spinning 10s infinite linear;
+  animation: spinning 15s infinite linear;
+}
+
+.astroid{
+  width: 40px;
+  position: absolute;
+  margin-left: -50px;
+  margin-top: 100px;
+  transform: rotate(-30deg);
+  animation: spinning 2s infinite linear;
 }
 
 @keyframes orbiting {
