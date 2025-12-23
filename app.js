@@ -1,24 +1,10 @@
-const video1 = document.getElementById("video1");
-const video2 = document.getElementById("video2");
-const video3 = document.getElementById("video3");
 
-let videoList = [video1, video2, video3];
-
-videoList.forEach(function (video) {
-  video.addEventListener("mouseover", function () {
-    video.play();
-  });
-  video.addEventListener("mouseout", function () {
-    video.pause();
-  });
-});
 
 document.querySelectorAll(".linkBtn").forEach((btn) => {
   btn.addEventListener("click", () => {
     window.location.href = btn.dataset.url;
   });
 });
-
 
 // Initialize EmailJS
 (function () {
@@ -35,11 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-        this
-      )
+      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
       .then(() => {
         alert("Message sent successfully!");
         form.reset(); // optional: clear form
@@ -51,4 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
+function goToContact() {
+  document.getElementById("contact-section").scrollIntoView({
+    behavior: "smooth",
+  });
+}

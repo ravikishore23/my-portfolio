@@ -1,586 +1,570 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kitchi-profile</title>
-    <link rel="stylesheet" href="styles.css" />
 
-    <link
-      href="https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <video
-        class="back-vid"
-        loop
-        autoplay
-        muted
-        play-inline
-        src="videos/galaxy.mp4"
-        type="video/mp4"
-      ></video>
-      <header>
-        <div class="left">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="48"
-            height="48"
-            fill="#FFFFFF"
-            viewBox="0 0 24 24"
-          >
-            <!--Boxicons v3.0.6 https://boxicons.com | License  https://docs.boxicons.com/free-->
-            <path
-              d="M21.21 3.88a2.93 2.93 0 0 0-2.57-.98c-.8.09-1.63.48-2.47 1.13-1.24-.65-2.62-1-4.06-1.02-2.44 0-4.69.88-6.4 2.55A8.95 8.95 0 0 0 3 11.9a9 9 0 0 0 .58 3.31c-1.07 1.2-2.07 3.68-.83 5.08.52.58 1.26.84 2.15.84.99 0 2.17-.33 3.44-.89 1.1.49 2.31.76 3.55.77h.12c2.37 0 4.59-.9 6.28-2.55 1.72-1.67 2.68-3.92 2.71-6.34.01-.98-.14-1.92-.42-2.83 1.28-2.21 1.7-4.2.63-5.41M7.11 6.99A6.94 6.94 0 0 1 12 5.01h.09c1.88.02 3.63.77 4.93 2.1.57.59 1.02 1.26 1.35 1.99-.97 1.46-2.45 3.2-4.54 5.06-2.04 1.81-3.9 3.05-5.43 3.85-.51-.31-.98-.67-1.41-1.11a6.92 6.92 0 0 1-1.98-4.98c.02-1.88.77-3.63 2.11-4.93ZM4.25 18.95c-.22-.25 0-1.08.39-1.78.28.39.58.77.92 1.12.21.22.44.43.67.62-1.05.31-1.75.3-1.98.03Zm14.76-6.86a6.92 6.92 0 0 1-2.11 4.93c-1.33 1.3-3.08 1.98-4.98 1.98-.37 0-.73-.05-1.09-.11a32 32 0 0 0 4.33-3.24 32 32 0 0 0 3.83-4.03c0 .16.02.31.02.47m-.55-6.38c-.17-.17-.34-.33-.52-.48.39-.22.7-.32.92-.35.36-.04.63.06.86.32.22.25.17.9-.21 1.82-.31-.46-.66-.91-1.06-1.31Z"
-            ></path>
-          </svg>
-        </div>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-        </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kitchi-profile</title>
+  <link rel="stylesheet" href="styles.css" />
 
-        <div class="boxicons">
-          <!-- From Uiverse.io by vinodjangid07 --> 
-        <button class="linkBtn" data-url="https://github.com/ravikishore23" " >
-            <span class="svgContainer">
-              <svg fill="white" viewBox="0 0 496 512" height="1.6em"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
-            </span>
-            <span class="BG"></span>
-            </button>
+  <link href="https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <video class="back-vid" loop autoplay muted play-inline src="videos/galaxy.mp4" type="video/mp4"></video>
 
 
-          <button class="linkBtn"  data-url="https://www.linkedin.com/in/kishore-kumar-r-bb9858287" >
-            <span class="svgContainer">
-              <svg
-              viewBox="0 0 469 512"
-                height="1.6em"
-                xmlns="http://www.w3.org/2000/svg"
-                class="svgIcon"
-                fill="white"
-                
-              >
-      <path
-        d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
-      ></path>
-    </svg>
-  </span>
-  <span class="BG"></span>
-</button>
 
-        </div>
-      </header>
-    
-      <section class="hero">
-        <div class="hero-info  autoBlur" >
-          
-          <h1>
-            i'm
-            <div class="name-cont">Kishorekumar.</div>
-            <span> Front-end Developer</span>
-          </h1>
-          <p>
-            I’m a passionate Frontend Developer who builds clean, responsive,
-            and user-friendly web interfaces. I focus on creating fast,
-            accessible, and visually appealing websites using modern web
-            technologies.
-          </p>
+    <header id="homebutton">
 
-          <button >contact Me <i class='bx  bx-paper-plane' style='color:#FFFFFF'></i> </button>
-          
-        </div>
-        <div class="hero-vid-box autoBlur">
-          <video
-            class="autoBlur"
-            autoplay
-            loop
-            muted
-            plays-inline
-            src="videos/astronaut-walk.mp4"
-            type="vide.mp4"
-          ></video>
-        </div>
-  
-      </section>
-      <section class="info-section " >
 
-        <h1 class="section-title autoDisplay">About Me</h1>
+      <div class="left">
+        <i class='bx  bx-planet' style='color:#FFFFFF'></i>
+      </div>
+      <ul>
+        <li><a href="#about-section">About</a></li>
+        <li><a href="#skill-section">Skills</a></li>
+        <li><a href="#project-section">Projects</a></li>
+      </ul>
 
-        <!-- astroid animation -->
-        <div class="astronaut-container">
-            <div class="orbit">
-                
-                <img class="astronaut" src="images/astonaut.png">
-              </div>
-
-        </div>
-        <div class="info-cards ">
-          
-         
+      <div class="boxicons">
+        <!-- From Uiverse.io by vinodjangid07 -->
+        <button class="linkBtn" data-url="https://github.com/ravikishore23">
         
-          <div id="card-1" class="card fadeRight-M">
-               <img
-                class="profile-pic"
-                src="images/profile-anime-cut.png"
-                alt="images"/>
-                <div>
-                  <p>
-                  i'm
-                   <span>Kishore Kumar</span><br />
-                    I am a B.Tech Artificial Intelligence and Data Science student with a strong interest in frontend development and UI/UX design.
-                   I enjoy building clean, user-focused web experiences while continuously learning new technologies.
-    
-                  </p>
+          <svg fill="white" viewBox="0 0 496 512" height="1.6em">
+            <path
+              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+            </path>
+          </svg>
+       
+          
+        </button>
 
-                </div>
-           
+
+        <button class="linkBtn" data-url="https://www.linkedin.com/in/kishore-kumar-r-bb9858287">
+          
+            <svg viewBox="0 0 469 512" height="1.6em" xmlns="http://www.w3.org/2000/svg" class="svgIcon" fill="white">
+              <path
+                d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z">
+              </path>
+            </svg>
+        
+      
+        </button>
+
+      </div>
+    </header>
+    <!-- astroid animation -->
+    <div class="astronaut-container">
+      <div class="orbit">
+
+        <img class="astronaut" src="images/astonaut.png">
+      </div>
+
+    </div>
+
+    <section class="hero">
+      <div class="hero-info  autoBlur">
+
+        <h1>
+          i'm
+          <div class="name-cont">Kishorekumar.</div>
+          <span> Front-end Developer</span>
+        </h1>
+        <p>
+          I’m a passionate Frontend Developer who builds clean, responsive,
+          and user-friendly web interfaces. I focus on creating fast,
+          accessible, and visually appealing websites using modern web
+          technologies.
+        </p>
+
+        <button onclick="goToContact()">Contact Me <i class='bx  bx-paper-plane' style='color:#FFFFFF'></i> </button>
+
+      </div>
+      <div class="hero-vid-box autoBlur">
+        <video class="autoBlur" autoplay loop muted plays-inline src="videos/astronaut-walk.mp4"
+          type="vide.mp4"></video>
+      </div>
+
+    </section>
+    <section class="info-section" id="about-section">
+
+      <h1 class="section-title autoDisplay">About Me</h1>
+
+      <div class="info-cards ">
+
+
+
+        <div id="card-1" class="card fadeRightCurve">
+          <img class="profile-pic" src="images/profile-anime-cut.png" alt="images" />
+          <div>
+            <p>
+              i'm
+              <span>Kishore Kumar</span><br />
+              I am a B.Tech Artificial Intelligence and Data Science student with a strong interest in frontend
+              development and UI/UX design.
+              I enjoy building clean, user-focused web experiences while continuously learning new technologies.
+
+            </p>
+
           </div>
 
-          <div id="card-2" class="card fadeLeft-M ">
+        </div>
 
-           <h1>Tech Stack</h1>
-            <div class="caroursel">
-              <div class="group">
-                <div class="cards"></div>
-                <div class="cards"><img src="images/2.png"></div>
-                <div class="cards"><img src="images/3.webp"></div>
-                <div class="cards"><img src="images/figma.png"></div>
-                <div class="cards"><img src="images/7.png"></div>
-                <div class="cards"><img src="images/11.png"></div>
-                <div class="cards"><img src="images/12.png"></div>
-                <div class="cards"><img src="images/13.png"></div>
-                <div class="cards"><img src="images/14.png"></div>
-                <div class="cards"><img src="images/15.png"></div>
-                <div class="cards"><img src="images/16.png"></div>
-                <div class="cards"><img src="images/17.png"></div>
-                <div class="cards"><img src="images/18.png"></div>
-                <div class="cards"><img src="images/19.png"></div>
-                <div class="cards"><img src="images/20.png"></div>
-              </div>
-              <div class="group">
-                <div class="cards"><img src="images/11.png"></div>
-                <div class="cards"><img src="images/2.png"></div>
-                <div class="cards"><img src="images/3.webp"></div>
-                <div class="cards"><img src="images/figma.png"></div>
-                <div class="cards"><img src="images/7.png"></div>
-                <div class="cards"><img src="images/11.png"></div>
-                <div class="cards"><img src="images/12.png"></div>
-                <div class="cards"><img src="images/13.png"></div>
-                <div class="cards"><img src="images/14.png"></div>
-                <div class="cards"><img src="images/15.png"></div>
-                <div class="cards"><img src="images/16.png"></div>
-                <div class="cards"><img src="images/17.png"></div>
-                <div class="cards"><img src="images/18.png"></div>
-                <div class="cards"><img src="images/19.png"></div>
-                <div class="cards"><img src="images/20.png"></div>
-                </div>
-                
+        <div id="card-2" class="card fadeLeftCurve ">
+
+          <h1>Tech Stack</h1>
+          <div class="caroursel">
+            <div class="group">
+              <div class="cards"></div>
+              <div class="cards"><img src="images/2.png"></div>
+              <div class="cards"><img src="images/3.webp"></div>
+              <div class="cards"><img src="images/figma.png"></div>
+              <div class="cards"><img src="images/7.png"></div>
+              <div class="cards"><img src="images/11.png"></div>
+              <div class="cards"><img src="images/12.png"></div>
+              <div class="cards"><img src="images/13.png"></div>
+              <div class="cards"><img src="images/14.png"></div>
+              <div class="cards"><img src="images/15.png"></div>
+              <div class="cards"><img src="images/16.png"></div>
+              <div class="cards"><img src="images/17.png"></div>
+              <div class="cards"><img src="images/18.png"></div>
+              <div class="cards"><img src="images/19.png"></div>
+              <div class="cards"><img src="images/20.png"></div>
             </div>
-            
-            
-            
-            <p>i specilize in a variety of langaugaes,frameworks,and tools that allow me to build robust and scaleable applications</p>
-            <div>
-              <img class="react" src="images/20.png">
-          
+            <div class="group">
+              <div class="cards"><img src="images/11.png"></div>
+              <div class="cards"><img src="images/2.png"></div>
+              <div class="cards"><img src="images/3.webp"></div>
+              <div class="cards"><img src="images/figma.png"></div>
+              <div class="cards"><img src="images/7.png"></div>
+              <div class="cards"><img src="images/11.png"></div>
+              <div class="cards"><img src="images/12.png"></div>
+              <div class="cards"><img src="images/13.png"></div>
+              <div class="cards"><img src="images/14.png"></div>
+              <div class="cards"><img src="images/15.png"></div>
+              <div class="cards"><img src="images/16.png"></div>
+              <div class="cards"><img src="images/17.png"></div>
+              <div class="cards"><img src="images/18.png"></div>
+              <div class="cards"><img src="images/19.png"></div>
+              <div class="cards"><img src="images/20.png"></div>
             </div>
-            
+
           </div>
-          
-          
 
 
-          <div id="card-3" class="card autoDisplayLow">
 
-            <div>
+          <p>i specilize in a variety of langaugaes,frameworks,and tools that allow me to build robust and scaleable
+            applications</p>
+          <div>
+            <img class="react" src="images/20.png">
+
+          </div>
+
+        </div>
+
+
+
+
+        <div id="card-3" class="card autoDisplayLow">
+
+          <div>
 
             <h1>Tech Skills</h1>
-              
-              <ul>
-                <li>
-                  <strong>Programming Languages -</strong> Python, JavaScript,
-                  TypeScript
-                </li>
-                
-                <li>
-                  <strong>Frontend Development -</strong> HTML, CSS, React, UI/UX
-                  Design (Figma)
-                </li>
-                
-                <li>
-                  <strong>Backend & Full-Stack -</strong> Node.js, Express, REST
-                  APIs, Database Handling
-                </li>
-                
-                <li>
-                  <strong>Artificial Intelligence -</strong> Machine Learning, Deep
-                  Learning, Generative AI
-                </li>
-                
-                <li>
-                  <strong>Cybersecurity -</strong> Network Security Basics,
-                  Vulnerability Analysis, Secure Coding Practices
-                </li>
-                
-                <li>
-                  <strong>Tools & Platforms -</strong> Git, GitHub, VS Code, Linux,
-                  Postman
-                </li>
-              </ul>
-            </div>
 
-            
-            <img class="astonaut-pic" src="images/asto-coder.png" >
-            
-          
-            </div>
-            
-            
-            
+            <ul>
+              <li>
+                <strong>Programming Languages -</strong> Python, JavaScript,
+                TypeScript
+              </li>
 
-         
-         <div id="card-4" class="card fadeLeft-M">
+              <li>
+                <strong>Frontend Development -</strong> HTML, CSS, React, UI/UX
+                Design (Figma)
+              </li>
 
-           
-           <h1></h1>
-            <button>
-              <i class='bx  bx-sparkles-alt' style='color:#FFFFFF'></i>  contact Me
+              <li>
+                <strong>Backend & Full-Stack -</strong> Node.js, Express, REST
+                APIs, Database Handling
+              </li>
+
+              <li>
+                <strong>Artificial Intelligence -</strong> Machine Learning, Deep
+                Learning, Generative AI
+              </li>
+
+              <li>
+                <strong>Cybersecurity -</strong> Network Security Basics,
+                Vulnerability Analysis, Secure Coding Practices
+              </li>
+
+              <li>
+                <strong>Tools & Platforms -</strong> Git, GitHub, VS Code, Linux,
+                Postman
+              </li>
+            </ul>
+          </div>
+
+
+          <img class="astonaut-pic" src="images/asto-coder.png">
+
+
+        </div>
+
+
+
+
+
+        <div id="card-4" class="card fadeLeftCurve-i">
+
+
+          <h1></h1>
+          <button onclick="goToContact()">
+            <i class='bx  bx-sparkles-alt' style='color:#FFFFFF'></i> contact Me
             <img src="images/connection.png" alt="">
-          </div>
+        </div>
 
 
 
-          <div id="card-5" class="card fadeRight-M">
-            <div class="alien-ship-container">
-              <div class="orbit-earth">
-                <img class="alien-ship" src="images/alien-ship.png" alt="image">
-              </div>
-              
+        <div id="card-5" class="card fadeRightCurve-i">
+          <div class="alien-ship-container">
+            <div class="orbit-earth">
+              <img class="alien-ship" src="images/alien-ship.png" alt="image">
             </div>
 
-            <img class="earth-anime-pic " src="images/earth-anime.png" alt="globe image">
-            <div> 
-               <p> i'm flexbile to work on various time zone.</b></p>
-            <span><i class='bx  bx-location' style='color:#FFFFFF'></i>  Location,India-Chennai. </span></div>
           </div>
 
+          <img class="earth-anime-pic " src="images/earth-anime.png" alt="globe image">
+          <div>
+            <p> i'm flexbile to work on various time zone.</b></p>
+            <span><i class='bx  bx-location' style='color:#FFFFFF'></i> Location,India-Chennai. </span>
+          </div>
+        </div>
 
-        
-        </section>
 
-        <section class="skill-section">
-        <h1 class="autoDisplay">Skills</h1>
-        <div class="skill-box">
-          <div class="designer">
-            
-            <h1 class="gradient"> Designer <i class='bx  bx-laptop-alt' style='color:#FFFFFF'></i>   </h1>
-            <p class="autoDisplay">I’m a passionate Frontend Developer who builds clean, responsive,
-              and user-friendly web interfaces. I focus on creating fast,
-              accessible, and visually appealing websites using modern web
-              technologies. </p>
-            </div>
-            <img  class="autoDisplay brain-pic" src="images/brain4.png" alt="skills-img">
 
-          <div class="coder">
-            <h1 class="gradient"> Coder <i class='bxr  bx-code' style='color:#FFFFFF'></i>  </h1>
-            <p class="autoDisplay">I’m a passionate Frontend Developer who builds clean, responsive,
+    </section>
+
+    <section class="skill-section" id="skill-section">
+      <h1 class="autoDisplay">Skills</h1>
+      <div class="skill-box">
+        <div class="designer">
+
+          <h1 class="gradient"> Designer <i class='bx  bx-laptop-alt' style='color:#FFFFFF'></i> </h1>
+          <p class="autoDisplay">I’m a passionate Frontend Developer who builds clean, responsive,
             and user-friendly web interfaces. I focus on creating fast,
             accessible, and visually appealing websites using modern web
-            technologies.</p>
-          </div>
-
-          
-
-
-
+            technologies. </p>
         </div>
+        <img class="autoDisplay brain-pic" src="images/brain4.png" alt="skills-img">
 
-
-      </section>
-
-
-      <section class="my-projects">
-        <h1 class="section-title autoDisplay">My projects</h1>
-        <div class="project-card">
-          <div class="project-video autoBlur">
-           <video id="video1" src="videos/project1.mp4"></video>
-          </div>
-          
-          <div class="project-info">
-            <h1 class="autoDisplayLow">Games<span class="gradient"> Hub </span>Website</h1>
-            <p class="fadeRight">
-              game hub shows the variety of games we can filter out based on geners and platforms 
-              game hub shows the variety of games we can filter out based on geners and platforms 
-            <button>
-             <i class='bxr  bx-link' style='color:#FFFFFF'></i>  website
-            </button>
- 
-            </p>
-          </div>
-
+        <div class="coder">
+          <h1 class="gradient"> Coder <i class='bxr  bx-code' style='color:#FFFFFF'></i> </h1>
+          <p class="autoDisplay">I write clean, efficient, and maintainable code with a strong focus on structure and
+            refactoring.
+            I use solid data structures and algorithms to build scalable and reliable solutions.
+          </p>
         </div>
-        <div class="project-card">
-          <div class="project-video autoBlur">
-            <video id="video2" src="videos/project2.mp4"></video>
-
-          </div>
-          
-          <div class="project-info">
-            <h1 class="autoDisplayLow"> Modern<span class="gradient"> portfolio  </span>website</h1>
-            <p class="fadeRight">
-              game hub shows the variety of games we can filter out based on geners and platforms 
-              game hub shows the variety of games we can filter out based on geners and platforms 
-            <button>
-             <i class='bxr  bx-link' style='color:#FFFFFF'></i>  website
-            </button>
- 
-            </p>
-          </div>
-
-        </div>
-        <div class="project-card">
-          <div class="project-video autoBlur">
-            <video id="video3" src="videos/project3.mp4"></video>
-          </div>
-          
-          <div class="project-info">
-            <h1 class="autoDisplayLow">Movie<span class="gradient">  Landing</span>Website</h1>
-            <p class="fadeRight">
-              game hub shows the variety of games we can filter out based on geners and platforms 
-              game hub shows the variety of games we can filter out based on geners and platforms 
-            <button>
-             <i class='bxr  bx-link' style='color:#FFFFFF'></i>  website
-            </button>
- 
-            </p>
-          </div>
-
-        </div>
-
-
-      </section>
-
-
-      
-      
-      <section class="certificates autoDisplayLow ">
-        
-        
-        <h1 class="autoDisplay">
-          Certificates
-        </h1>
-        
-        <div class="certi-coursel">
-
-        
-          <div class="certi-container">
-         
-          <div class="certify">            
-            <img src="images/js-part1.png">               
-          </div>
-          <div class="certify">           
-            <img src="images/js-part2.png">           
-          </div>
-          <div class="certify">           
-            <img src="images/ts-certi.png">            
-          </div>          
-          <div class="certify">            
-            <img src="images/flex_page1.png">          
-          </div>        
-          <div class="certify">          
-            <img src="images/js-scrimba_page1.png">            
-          </div>          
-          <div class="certify">
-            <img src="images/css_Animations_page1.png">  
-          </div>
-          <div class="certify">
-               <img src="images/javascript_intermediate_certificate_page1.png">
-           </div>
-          <div class="certify">
-            <img src="images/python_basic_certificate_page1.png">  
-          </div>
-            <div class="certify">
-            <img src="images/figma-certify.png">  
-          </div>
-          <div class="certify">
-            <img src="images/cert1.png">
-          </div>
-          <div class="certify">
-         <img src="images/cert2.png">
-          </div>
-          <div class="certify">
-             <img src="images/cert9.png">
-          </div>
-          <div class="certify">
-           <img src="images/cert5.png">
-          </div>
-          
-          <div class="certify">
-             <img src="images/cert10.png">
-          </div>
-          <div class="certify">
-             <img src="images/cert3.png">
-          </div> 
-          <div class="certify">
-              <img src="images/cert4.png">
-          </div> 
-          <div class="certify">
-          <img src="images/cert6.png">
-          </div>
-          <div class="certify">
-            <img src="images/cert7.png">
-          </div>
-          
-        </div>
-        
-       
-         <div aria-hidden="true" class="certi-container">
-         
-          <div class="certify">            
-            <img src="images/js-part1.png">               
-          </div>
-          <div class="certify">           
-            <img src="images/js-part2.png">           
-          </div>
-          <div class="certify">           
-            <img src="images/ts-certi.png">            
-          </div>          
-          <div class="certify">            
-            <img src="images/flex_page1.png">          
-          </div>        
-          <div class="certify">          
-            <img src="images/js-scrimba_page1.png">            
-          </div>          
-          <div class="certify">
-            <img src="images/css_Animations_page1.png">  
-          </div>
-          <div class="certify">
-               <img src="images/javascript_intermediate_certificate_page1.png">
-           </div>
-          <div class="certify">
-            <img src="images/python_basic_certificate_page1.png">  
-          </div>
-            <div class="certify">
-            <img src="images/figma-certify.png">  
-          </div>
-          <div class="certify">
-            <img src="images/cert1.png">
-          </div>
-          <div class="certify">
-         <img src="images/cert2.png">
-          </div>
-          <div class="certify">
-             <img src="images/cert9.png">
-          </div>
-          <div class="certify">
-           <img src="images/cert5.png">
-          </div>
-          
-          <div class="certify">
-             <img src="images/cert10.png">
-          </div>
-          <div class="certify">
-             <img src="images/cert3.png">
-          </div> 
-          <div class="certify">
-              <img src="images/cert4.png">
-          </div> 
-          <div class="certify">
-          <img src="images/cert6.png">
-          </div>
-          <div class="certify">
-            <img src="images/cert7.png">
-          </div>
-          
-        </div>
-
       </div>
-      
-      </section>
 
 
-
-      <section class="contact autoBlur">
-
-
+</section>
        
-        
-        <div class="contact-container">
-          <div class="message-form">
 
 
-            <form class="contact-form">
 
-              
-              
-              
-              <h2>
-                lets talk
-              </h2>
-              <p>Whether you're looking to build a new website, improve your exixting platform, or bring a unique project to life,i'm here to help.</p>
-              
-              <label for="name">Full Name</label>
-              <input id="name-input" type="text" >
-              
-              <label>
-                Email
-              </label>
-              <input id="mail-input" type="email">
-              <label>message</label>
-              <input id="message-input" type="text" maxlength="100">
-              
-              <button>Send<i class='bx  bx-paper-plane' style='color:#FFFFFF'></i> </button>
-              
-            </form>
-              
-              
-            
-            
-            <div class="contact-box">
-                <button class="linkBtn" data-url="https://wa.me/917358469953"><svg  xmlns="http://www.w3.org/2000/svg" width="40" height="40"  
-                  fill="#FFFFFF" viewBox="0 0 24 24" >
-                  <!--Boxicons v3.0.6 https://boxicons.com | License  https://docs.boxicons.com/free-->
-                  <path fill-rule="evenodd" d="M18.403 5.633A8.92 8.92 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a9 9 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.93 8.93 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.45 7.45 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.45 7.45 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.41 7.41 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73s-.354-.112-.504.112-.58.729-.711.879-.262.168-.486.056-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393s.149-.224.224-.374.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.181-.435-.366-.377-.504-.383a10 10 0 0 0-.429-.008.83.83 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321 1.582 2.415 3.832 3.387c.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066s.187-.973.131-1.067-.207-.151-.43-.263" clip-rule="evenodd"></path>
-                </svg></i></button>
-              
-              <button class="linkBtn" data-url="https://github.com/ravikishore23"><svg  xmlns="http://www.w3.org/2000/svg" width="40" height="40"  
-                fill="#FFFFFF" viewBox="0 0 24 24" >
-                <!--Boxicons v3.0.6 https://boxicons.com | License  https://docs.boxicons.com/free-->
-                <path fill-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.6 9.6 0 0 1 2.496-.336 9.6 9.6 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2" clip-rule="evenodd"></path>
-              </svg></i></button>
-              
-              <button class="linkBtn" data-url="https://www.linkedin.com/in/kishore-kumar-r-bb9858287"><svg  xmlns="http://www.w3.org/2000/svg" width="40" height="40"  
-                fill="#FFFFFF" viewBox="0 0 24 24" >
-                <!--Boxicons v3.0.6 https://boxicons.com | License  https://docs.boxicons.com/free-->
-                <path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1M8.339 18.337H5.667v-8.59h2.672zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096m11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"></path>
-              </svg></i> </button>
-              <button class="linkBtn" data-url="https://mail.google.com/mail/?view=cm&fs=1&to=ravikishore23rk@gmail.com"><svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  
-                fill="#FFFFFF" viewBox="0 0 24 24" >
-                <!--Boxicons v3.0.6 https://boxicons.com | License  https://docs.boxicons.com/free-->
-                <path d="m18.73 5.41-1.28 1L12 10.46 6.55 6.37l-1.28-1A2 2 0 0 0 2 7.05v11.59A1.36 1.36 0 0 0 3.36 20h3.19v-7.72L12 16.37l5.45-4.09V20h3.19A1.36 1.36 0 0 0 22 18.64V7.05a2 2 0 0 0-3.27-1.64"></path>
-                </svg></button>
-              
+          <section class="project-section">
+            <h1 class="autoDisplay" id="project-section">
+              Projects
+            </h1>
+
+            <div class="project-card fadeRight-M">
+              <div class="project-name">
+                <p>GameHub Platform</p>
+                Ts React Node.js TailwindCSS
+              </div>
+              <div class="read-more">
+                <a href="">link <i class='bx  bx-link' style='color:#FFFFFF'></i> </a>
+
+              </div>  
             </div>
+            <div class="project-card fadeLeft-M">
+              <div class="project-name">
+                <p>RandomPassword - Generator</p>
+                VanillaJS CSS HTML
+              </div>
+              <div class="read-more">
+                <a href="https://web-random-password-generator-tojt.vercel.app/">link <i class='bx  bx-link' style='color:#FFFFFF'></i></a>
+
+              </div>  
+            </div>
+            <div class="project-card fadeRight-M">
+              <div class="project-name">
+                <p>LeadsTracker - Crome extension</p>
+                Crome VanillaJS CSS HTML
+              </div>
+              <div class="read-more">
+              <a href="https://github.com/ravikishore23/Crome-extension-leads-track-projecter-.git">link <i class='bx  bx-link' style='color:#FFFFFF'></i> </a> 
+              </div>  
+            </div>
+            <div class="project-card fadeLeft-M">
+              <div class="project-name">
+                <p>Portfolio Site</p>
+                JS CSS HTML
+                
+              </div>
+              <div class="read-more">
+                <a href="">link <i class='bx  bx-link' style='color:#FFFFFF'></i></a> 
+
+              </div>  
+            </div>
+            <div class="project-card fadeRight-M">
+              <div class="project-name">
+                <p>Unit Conversion</p>
+                JS CSS HTML
+                
+              </div>
+              <div class="read-more">
+                <a href="">link <i class='bx  bx-link' style='color:#FFFFFF'></i> </a>
+
+              </div>  
+            </div>
+
+          </section>
+
+
+    <section class="certificates autoDisplayLow ">
+
+
+      <h1 class="autoDisplay">
+        Certificates
+      </h1>
+
+      <div class="certi-coursel">
+
+
+        <div class="certi-container">
+
+          <div class="certify">
+            <img src="images/js-part1.png">
           </div>
+          <div class="certify">
+            <img src="images/js-part2.png">
+          </div>
+          <div class="certify">
+            <img src="images/ts-certi.png">
+          </div>
+          <div class="certify">
+            <img src="images/flex_page1.png">
+          </div>
+          <div class="certify">
+            <img src="images/js-scrimba_page1.png">
+          </div>
+          <div class="certify">
+            <img src="images/css_Animations_page1.png">
+          </div>
+          <div class="certify">
+            <img src="images/javascript_intermediate_certificate_page1.png">
+          </div>
+          <div class="certify">
+            <img src="images/python_basic_certificate_page1.png">
+          </div>
+          <div class="certify">
+            <img src="images/figma-certify.png">
+          </div>
+          <div class="certify">
+            <img src="images/cert1.png">
+          </div>
+          <div class="certify">
+            <img src="images/cert2.png">
+          </div>
+          <div class="certify">
+            <img src="images/cert9.png">
+          </div>
+          <div class="certify">
+            <img src="images/cert5.png">
+          </div>
+
+          <div class="certify">
+            <img src="images/cert10.png">
+          </div>
+          <div class="certify">
+            <img src="images/cert3.png">
+          </div>
+          <div class="certify">
+            <img src="images/cert4.png">
+          </div>
+          <div class="certify">
+            <img src="images/cert6.png">
+          </div>
+          <div class="certify">
+            <img src="images/cert7.png">
+          </div>
+
+        </div>
+
+
+        <div aria-hidden="true" class="certi-container">
+
+          <div class="certify">
+            <img src="images/js-part1.png">
+          </div>
+          <div class="certify">
+            <img src="images/js-part2.png">
+          </div>
+          <div class="certify">
+            <img src="images/ts-certi.png">
+          </div>
+          <div class="certify">
+            <img src="images/flex_page1.png">
+          </div>
+          <div class="certify">
+            <img src="images/js-scrimba_page1.png">
+          </div>
+          <div class="certify">
+            <img src="images/css_Animations_page1.png">
+          </div>
+          <div class="certify">
+            <img src="images/javascript_intermediate_certificate_page1.png">
+          </div>
+          <div class="certify">
+            <img src="images/python_basic_certificate_page1.png">
+          </div>
+          <div class="certify">
+            <img src="images/figma-certify.png">
+          </div>
+          <div class="certify">
+            <img src="images/cert1.png">
+          </div>
+          <div class="certify">
+            <img src="images/cert2.png">
+          </div>
+          <div class="certify">
+            <img src="images/cert9.png">
+          </div>
+          <div class="certify">
+            <img src="images/cert5.png">
+          </div>
+
+          <div class="certify">
+            <img src="images/cert10.png">
+          </div>
+          <div class="certify">
+            <img src="images/cert3.png">
+          </div>
+          <div class="certify">
+            <img src="images/cert4.png">
+          </div>
+          <div class="certify">
+            <img src="images/cert6.png">
+          </div>
+          <div class="certify">
+            <img src="images/cert7.png">
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <section class="contact autoBlur" id="contact-section">
+
+
+
+
+      <div class="contact-container">
+        <div class="message-form">
+
+
+          <form class="contact-form">
+
+
+            <h2>
+              lets talk
+            </h2>
+            <p>Whether you're looking to build a new website, improve your exixting platform, or bring a unique project
+              to life,i'm here to help.</p>
+
+            <label for="name">Full Name</label>
+            <input id="name-input" type="text">
+
+            <label>
+              Email
+            </label>
+            <input id="mail-input" type="email">
+            <label>Message</label>
+            <input id="message-input" type="text" maxlength="100">
+
+            <button>Send<i class='bx  bx-paper-plane' style='color:#FFFFFF'></i> </button>
+
+          </form>
+
+
+
+
+          <div class="contact-box">
+            <button class="linkBtn" data-url="https://wa.me/917358469953"><svg xmlns="http://www.w3.org/2000/svg"
+                width="40" height="40" fill="#FFFFFF" viewBox="0 0 24 24">
+                <!--Boxicons v3.0.6 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                <path fill-rule="evenodd"
+                  d="M18.403 5.633A8.92 8.92 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a9 9 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.93 8.93 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.45 7.45 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.45 7.45 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.41 7.41 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73s-.354-.112-.504.112-.58.729-.711.879-.262.168-.486.056-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393s.149-.224.224-.374.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.181-.435-.366-.377-.504-.383a10 10 0 0 0-.429-.008.83.83 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321 1.582 2.415 3.832 3.387c.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066s.187-.973.131-1.067-.207-.151-.43-.263"
+                  clip-rule="evenodd"></path>
+              </svg></i></button>
+
+            <button class="linkBtn" data-url="https://github.com/ravikishore23"><svg xmlns="http://www.w3.org/2000/svg"
+                width="40" height="40" fill="#FFFFFF" viewBox="0 0 24 24">
+                <!--Boxicons v3.0.6 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                <path fill-rule="evenodd"
+                  d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.6 9.6 0 0 1 2.496-.336 9.6 9.6 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2"
+                  clip-rule="evenodd"></path>
+              </svg></i></button>
+
+            <button class="linkBtn" data-url="https://www.linkedin.com/in/kishore-kumar-r-bb9858287"><svg
+                xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#FFFFFF" viewBox="0 0 24 24">
+                <!--Boxicons v3.0.6 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                <path
+                  d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1M8.339 18.337H5.667v-8.59h2.672zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096m11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z">
+                </path>
+              </svg></i> </button>
+            <button class="linkBtn"
+              data-url="https://mail.google.com/mail/?view=cm&fs=1&to=ravikishore23rk@gmail.com"><svg
+                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFFFFF" viewBox="0 0 24 24">
+                <!--Boxicons v3.0.6 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                <path
+                  d="m18.73 5.41-1.28 1L12 10.46 6.55 6.37l-1.28-1A2 2 0 0 0 2 7.05v11.59A1.36 1.36 0 0 0 3.36 20h3.19v-7.72L12 16.37l5.45-4.09V20h3.19A1.36 1.36 0 0 0 22 18.64V7.05a2 2 0 0 0-3.27-1.64">
+                </path>
+              </svg></button>
+
+          </div>
+          <div class="home-button">
+
+            <a href="#homebutton"> <i class='bx  bx-home' style='color:#FFFFFF'></i> Home</a>
+          </div>
+
         </div>
       </div>
-    
+
+  </div>
+
   </section>
+
   <footer>
     <div>
-   <i class='bx  bx-copyright' style='color:#FFFFFF'></i> Copyright  
+      <i class='bx  bx-copyright' style='color:#FFFFFF'></i> Copyright
     </div>
     <div>
       Made by Kishorekumar
     </div>
-    
+
   </footer>
-  
-      </div>
-      
-      <script src="app.js"></script>
-  </body>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
 </html>
