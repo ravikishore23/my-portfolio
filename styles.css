@@ -326,6 +326,15 @@ header a {
     height: 200px;
     margin-bottom: 100px;
   }
+
+  .astronaut{
+    width:30px;
+
+  }
+
+  .astroid{
+    width:30px;
+  }
 }
 
 /* About section */
