@@ -319,11 +319,11 @@ header a {
   }
 
   .astronaut-container {
-    z-index: 99;
+    z-index: -1;
     position: absolute;
     bottom: 0;
-    width: 340px;
-    height: 340px;
+    width: 200px;
+    height: 200px;
     margin-bottom: 100px;
   }
 }
