@@ -15,16 +15,11 @@ html {
     scroll-behavior: smooth;
   }
 
-  body{
-
+  body {
     font-family: Arial, Helvetica, sans-serif;
-    
+
     overflow-x: hidden;
-
-
   }
-
-  
 }
 
 @media (max-aspect-ratio: 16/9) {
@@ -628,6 +623,7 @@ header a {
       "three three"
       "five five"
       "four four";
+      gap: 20px;
   }
 
   .info-section {
@@ -648,6 +644,12 @@ header a {
 
   .card:nth-child(1) img {
     width: 150px;
+  }
+
+
+
+  .card:nth-child(2) {
+    overflow: hidden;
   }
 
   .card:nth-child(2) p {
@@ -1176,6 +1178,27 @@ footer div {
     transform: translateX(0px) scale(1) rotate(0);
   }
 }
+
+@media screen and (max-width: 800px) {
+  .fadeRightCurve {
+    animation: blurRighttoLeftCurve-M both;
+    animation-timeline: view();
+  }
+
+  @keyframes blurRighttoLeftCurve-M {
+    from {
+      transform: translateX(-200px) scale(0) rotate(60deg);
+      opacity: 0;
+      filter: blur(20px);
+    }
+    35%,
+    65% {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(0px) scale(1) rotate(0);
+    }
+  }
+}
 /* make it slight curve for desktop info card - 4 */
 
 .fadeRightCurve-i {
@@ -1197,6 +1220,28 @@ footer div {
   }
 }
 
+@media screen and (max-width: 800px){
+
+  .fadeRightCurve-i {
+    animation: blurRighttoLeftCurve-i-M both;
+    animation-timeline: view();
+  }
+  
+  @keyframes blurRighttoLeftCurve-i-M {
+    from {
+      transform: translateX(100px) scale(0) rotate(-60deg);
+      opacity: 0;
+      filter: blur(20px);
+    }
+    35%,
+    65% {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(0px) scale(1) rotate(0);
+    }
+  }
+}
+  
 /* Fade left  */
 
 .fadeLeft-M {
@@ -1238,9 +1283,34 @@ footer div {
   }
 }
 
-/* make it slight curve for desktop info card - 4 */
+/* for mobile */
 
-.fadeLeftCurve-i {
+@media screen and (max-width: 800px){
+
+  
+  .fadeLeftCurve{
+    animation: blurLefttoRightCurve-M both;
+    animation-timeline: view();
+  }
+  
+  @keyframes blurLefttoRightCurve-M {
+    from {
+      transform: translateX(100px) scale(0) rotate(-60deg);
+      opacity: 0;
+      filter: blur(20px);
+    }
+    35%,
+    65% {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(0px) scale(1) rotate(0);
+    }
+  }
+}
+  
+  /* make it slight curve for desktop info card - 4 */
+  
+  .fadeLeftCurve-i {
   animation: blurLefttoRightCurve-i both;
   animation-timeline: view();
 }
