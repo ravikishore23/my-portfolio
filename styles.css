@@ -623,7 +623,7 @@ header a {
       "three three"
       "five five"
       "four four";
-      gap: 20px;
+    gap: 20px;
   }
 
   .info-section {
@@ -645,8 +645,6 @@ header a {
   .card:nth-child(1) img {
     width: 150px;
   }
-
-
 
   .card:nth-child(2) {
     overflow: hidden;
@@ -1167,7 +1165,7 @@ footer div {
 
 @keyframes blurRighttoLeftCurve {
   from {
-    transform: translateX(-500px) scale(0) rotate(-60deg);
+    transform: translateX(-200px) scale(0) rotate(-60deg);
     opacity: 0;
     filter: blur(20px);
   }
@@ -1208,7 +1206,7 @@ footer div {
 
 @keyframes blurRighttoLeftCurve-i {
   from {
-    transform: translateX(500px) scale(0) rotate(-60deg);
+    transform: translateX(200px) scale(0) rotate(-60deg);
     opacity: 0;
     filter: blur(20px);
   }
@@ -1220,13 +1218,12 @@ footer div {
   }
 }
 
-@media screen and (max-width: 800px){
-
+@media screen and (max-width: 800px) {
   .fadeRightCurve-i {
     animation: blurRighttoLeftCurve-i-M both;
     animation-timeline: view();
   }
-  
+
   @keyframes blurRighttoLeftCurve-i-M {
     from {
       transform: translateX(100px) scale(0) rotate(-60deg);
@@ -1241,7 +1238,7 @@ footer div {
     }
   }
 }
-  
+
 /* Fade left  */
 
 .fadeLeft-M {
@@ -1271,7 +1268,7 @@ footer div {
 
 @keyframes blurLefttoRightCurve {
   from {
-    transform: translateX(500px) scale(0) rotate(60deg);
+    transform: translateX(200px) scale(0) rotate(60deg);
     opacity: 0;
     filter: blur(20px);
   }
@@ -1285,14 +1282,12 @@ footer div {
 
 /* for mobile */
 
-@media screen and (max-width: 800px){
-
-  
-  .fadeLeftCurve{
+@media screen and (max-width: 800px) {
+  .fadeLeftCurve {
     animation: blurLefttoRightCurve-M both;
     animation-timeline: view();
   }
-  
+
   @keyframes blurLefttoRightCurve-M {
     from {
       transform: translateX(100px) scale(0) rotate(-60deg);
@@ -1307,17 +1302,17 @@ footer div {
     }
   }
 }
-  
-  /* make it slight curve for desktop info card - 4 */
-  
-  .fadeLeftCurve-i {
+
+/* make it slight curve for desktop info card - 4 */
+
+.fadeLeftCurve-i {
   animation: blurLefttoRightCurve-i both;
   animation-timeline: view();
 }
 
 @keyframes blurLefttoRightCurve-i {
   from {
-    transform: translateX(-500px) scale(0) rotate(60deg);
+    transform: translateX(-200px) scale(0) rotate(60deg);
     opacity: 0;
     filter: blur(20px);
   }
@@ -1336,7 +1331,7 @@ footer div {
 
 @keyframes blurBottomtoTopAnimation {
   from {
-    transform: translatey(500px) scale(0);
+    transform: translatey(200px) scale(0);
     opacity: 0;
     filter: blur(20px);
   }
