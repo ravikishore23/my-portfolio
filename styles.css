@@ -258,16 +258,13 @@ header a {
 
 .gradient {
   background: linear-gradient(
-    to right,
-    #7a0f8d,
-    #cb85f3,
+    30deg,
     #2fe7ff,
-    #965df8,
-    #e1c1ff,
-    #5c21ff,
-    #6640f7
+    white,
+    #2fe7ff
+   
   );
-  background-size: 200%;
+  background-size: 150%;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -297,6 +294,7 @@ header a {
 .hero-vid-box {
   display: flex;
   overflow: hidden;
+  align-items: center;
   z-index: -1;
   justify-content: center;
 }
