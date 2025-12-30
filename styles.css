@@ -168,7 +168,7 @@ header a {
 
 .boxicons button:hover {
   /* background: linear-gradient(120deg, rgb(206, 29, 206), violet, violet, blue); */
-  box-shadow: 0 0 25px rgb(255, 162, 236);
+  
   background-color: rgba(255, 255, 255, 0.444);
 }
 
@@ -237,7 +237,7 @@ header a {
   gap: 8px;
   color: white;
   border: 1px solid white;
-  background-color: rgba(148, 119, 168, 0.547);
+  background-color: rgba(255, 255, 255, 0.337);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 25px rgb(11, 11, 11);
   border-radius: 15px;
@@ -247,23 +247,17 @@ header a {
 }
 
 .hero-info button:hover {
-  box-shadow: 0 0 25px rgb(201, 141, 248);
+  box-shadow: 0 0 15px rgb(255, 255, 255);
   background: linear-gradient(
-    to right,
-    rgba(255, 182, 193, 0.686),
-    rgba(238, 130, 238, 0.686)
+    160deg,
+    rgba(255, 255, 255, 0.733),
+    rgba(172, 28, 249, 0.278)
   );
   border: none;
 }
 
 .gradient {
-  background: linear-gradient(
-    30deg,
-    #2fe7ff,
-    white,
-    #2fe7ff
-   
-  );
+  background: linear-gradient(30deg, #2fe7ff, white, #2fe7ff);
   background-size: 150%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -297,9 +291,17 @@ header a {
   align-items: center;
   z-index: -1;
   justify-content: center;
+  width: 100%;
+  /* margin-top: -200px; */
+ 
 }
 
 .hero-vid-box video {
+  width: 100%;
+  mix-blend-mode: lighten;
+}
+.hero-vid-box img {
+  width: 100%;
   mix-blend-mode: lighten;
 }
 
