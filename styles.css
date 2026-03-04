@@ -84,7 +84,8 @@ header ul {
   padding: 15px 15px;
   border-radius: 50px;
   background-color: rgba(0, 0, 60, 0.3);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   font-family: cursive;
   box-shadow: 0 0 15px #72a1de68;
 }
@@ -114,12 +115,14 @@ header a {
   border-radius: 50%;
   position: relative;
   animation: orbiting 60s infinite linear;
+  will-change: transform;
 }
 .astronaut {
   position: absolute;
   width: 40px;
   transform: rotate(-30deg);
   animation: spinning 15s infinite linear;
+  will-change: transform;
 }
 
 .astroid {
@@ -129,6 +132,7 @@ header a {
   margin-top: 100px;
   transform: rotate(-30deg);
   animation: spinning 2s infinite linear;
+  will-change: transform;
 }
 
 @keyframes orbiting {
@@ -388,6 +392,7 @@ header a {
   border: 2px solid white;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.089);
+  contain: content;
 }
 
 .card:nth-child(1) {
@@ -445,6 +450,7 @@ header a {
   top: 20%;
   padding: 30px 40px;
   animation: spinning 20s linear infinite;
+  will-change: transform;
 }
 @keyframes spinning {
   from {
@@ -474,6 +480,7 @@ header a {
   align-items: center;
   justify-content: center;
   animation: spin 20s infinite linear;
+  will-change: transform;
 }
 
 .cards {
@@ -489,10 +496,10 @@ header a {
 }
 @keyframes spin {
   from {
-    translate: 0;
+    transform: translateX(0);
   }
   to {
-    translate: -100%;
+    transform: translateX(-100%);
   }
 }
 
@@ -609,23 +616,24 @@ header a {
 .alien-ship {
   width: 40px;
   animation: woble 0.4s infinite linear;
-  transform: rotate(-30deg);
   mix-blend-mode: hard-light;
+  will-change: transform;
 }
 .orbit-earth {
   width: 190px;
   height: 190px;
   border-radius: 50%;
   animation: spinning 60s infinite linear;
+  will-change: transform;
 }
 
 @keyframes woble {
   0% {
-    margin: 1px;
+    transform: translateY(1px) rotate(-30deg);
   }
 
   100% {
-    margin: 0px;
+    transform: translateY(0px) rotate(-30deg);
   }
 }
 
@@ -917,6 +925,7 @@ header a {
   gap: 150px;
   animation: spin 40s linear infinite;
   mix-blend-mode: lighten;
+  will-change: transform;
 }
 
 .certi-coursel:hover * {
@@ -1095,11 +1104,13 @@ footer div {
 .autoBlur {
   animation: autoBlurAnimation linear both;
   animation-timeline: view();
+  will-change: filter, opacity;
+  transform: translateZ(0);
 }
 
 @keyframes autoBlurAnimation {
   0% {
-    filter: blur(40px);
+    filter: blur(10px);
     opacity: 0;
   }
 
@@ -1110,7 +1121,7 @@ footer div {
   }
 
   100% {
-    filter: blur(40px);
+    filter: blur(10px);
     opacity: 0;
   }
 }
@@ -1120,57 +1131,63 @@ footer div {
 .autoDisplay {
   animation: autoDisplayAnimation both;
   animation-timeline: view();
+  will-change: transform, filter, opacity;
+  transform: translateZ(0);
 }
 
 @keyframes autoDisplayAnimation {
   from {
-    filter: blur(10px);
-    transform: translatey(-100px) scale(0);
+    filter: blur(5px);
+    transform: translateY(-100px) scale(0) translateZ(0);
     opacity: 0.2;
   }
 
   50% {
     opacity: 1;
     filter: blur(0);
-    transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1) translateZ(0);
   }
 }
 
 .autoDisplayLow {
   animation: autoDisplayLowAnimation both;
   animation-timeline: view();
+  will-change: transform, filter, opacity;
+  transform: translateZ(0);
 }
 
 @keyframes autoDisplayLowAnimation {
   from {
-    filter: blur(10px);
-    transform: translatey(-5px) scale(0);
+    filter: blur(5px);
+    transform: translateY(-5px) scale(0) translateZ(0);
     opacity: 0.5;
   }
 
   50% {
     opacity: 1;
     filter: blur(0);
-    transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1) translateZ(0);
   }
 }
 
 .fadeRight-M {
   animation: blurRighttoLeft both;
   animation-timeline: view();
+  will-change: transform, filter, opacity;
+  transform: translateZ(0);
 }
 
 @keyframes blurRighttoLeft {
   from {
-    transform: translateX(-500px) scale(0);
+    transform: translateX(-500px) scale(0) translateZ(0);
     opacity: 0;
-    filter: blur(20px);
+    filter: blur(8px);
   }
   35%,
   65% {
     opacity: 1;
     filter: blur(0);
-    transform: translateX(0px) scale(1);
+    transform: translateX(0px) scale(1) translateZ(0);
   }
 }
 
@@ -1179,19 +1196,20 @@ footer div {
 .fadeRightCurve {
   animation: blurRighttoLeftCurve both;
   animation-timeline: view();
+  will-change: transform, filter, opacity;
 }
 
 @keyframes blurRighttoLeftCurve {
   from {
-    transform: translateX(-200px) scale(0) rotate(-60deg);
+    transform: translateX(-200px) scale(0) rotate(-60deg) translateZ(0);
     opacity: 0;
-    filter: blur(20px);
+    filter: blur(8px);
   }
   35%,
   65% {
     opacity: 1;
     filter: blur(0);
-    transform: translateX(0px) scale(1) rotate(0);
+    transform: translateX(0px) scale(1) rotate(0) translateZ(0);
   }
 }
 
@@ -1203,15 +1221,15 @@ footer div {
 
   @keyframes blurRighttoLeftCurve-M {
     from {
-      transform: translateX(-200px) scale(0) rotate(60deg);
+      transform: translateX(-200px) scale(0) rotate(60deg) translateZ(0);
       opacity: 0;
-      filter: blur(20px);
+      filter: blur(8px);
     }
     35%,
     65% {
       opacity: 1;
       filter: blur(0);
-      transform: translateX(0px) scale(1) rotate(0);
+      transform: translateX(0px) scale(1) rotate(0) translateZ(0);
     }
   }
 }
@@ -1220,19 +1238,20 @@ footer div {
 .fadeRightCurve-i {
   animation: blurRighttoLeftCurve-i both;
   animation-timeline: view();
+  will-change: transform, filter, opacity;
 }
 
 @keyframes blurRighttoLeftCurve-i {
   from {
-    transform: translateX(200px) scale(0) rotate(-60deg);
+    transform: translateX(200px) scale(0) rotate(-60deg) translateZ(0);
     opacity: 0;
-    filter: blur(20px);
+    filter: blur(8px);
   }
   35%,
   65% {
     opacity: 1;
     filter: blur(0);
-    transform: translateX(0px) scale(1) rotate(0);
+    transform: translateX(0px) scale(1) rotate(0) translateZ(0);
   }
 }
 
@@ -1244,15 +1263,15 @@ footer div {
 
   @keyframes blurRighttoLeftCurve-i-M {
     from {
-      transform: translateX(100px) scale(0) rotate(-60deg);
+      transform: translateX(100px) scale(0) rotate(-60deg) translateZ(0);
       opacity: 0;
-      filter: blur(20px);
+      filter: blur(8px);
     }
     35%,
     65% {
       opacity: 1;
       filter: blur(0);
-      transform: translateX(0px) scale(1) rotate(0);
+      transform: translateX(0px) scale(1) rotate(0) translateZ(0);
     }
   }
 }
@@ -1263,38 +1282,41 @@ footer div {
   animation: blurLefttoRight both;
   animation-timeline: view();
   animation-duration: 100s;
+  will-change: transform, filter, opacity;
+  transform: translateZ(0);
 }
 
 @keyframes blurLefttoRight {
   from {
-    transform: translateX(500px) scale(0);
+    transform: translateX(500px) scale(0) translateZ(0);
     opacity: 0;
-    filter: blur(20px);
+    filter: blur(8px);
   }
   35%,
   65% {
     opacity: 1;
     filter: blur(0);
-    transform: translateX(0px) scale(1);
+    transform: translateX(0px) scale(1) translateZ(0);
   }
 }
 
 .fadeLeftCurve {
   animation: blurLefttoRightCurve both;
   animation-timeline: view();
+  will-change: transform, filter, opacity;
 }
 
 @keyframes blurLefttoRightCurve {
   from {
-    transform: translateX(200px) scale(0) rotate(60deg);
+    transform: translateX(200px) scale(0) rotate(60deg) translateZ(0);
     opacity: 0;
-    filter: blur(20px);
+    filter: blur(8px);
   }
   35%,
   65% {
     opacity: 1;
     filter: blur(0);
-    transform: translateX(0px) scale(1) rotate(0);
+    transform: translateX(0px) scale(1) rotate(0) translateZ(0);
   }
 }
 
@@ -1308,15 +1330,15 @@ footer div {
 
   @keyframes blurLefttoRightCurve-M {
     from {
-      transform: translateX(100px) scale(0) rotate(-60deg);
+      transform: translateX(100px) scale(0) rotate(-60deg) translateZ(0);
       opacity: 0;
-      filter: blur(20px);
+      filter: blur(8px);
     }
     35%,
     65% {
       opacity: 1;
       filter: blur(0);
-      transform: translateX(0px) scale(1) rotate(0);
+      transform: translateX(0px) scale(1) rotate(0) translateZ(0);
     }
   }
 }
@@ -1326,37 +1348,39 @@ footer div {
 .fadeLeftCurve-i {
   animation: blurLefttoRightCurve-i both;
   animation-timeline: view();
+  will-change: transform, filter, opacity;
 }
 
 @keyframes blurLefttoRightCurve-i {
   from {
-    transform: translateX(-200px) scale(0) rotate(60deg);
+    transform: translateX(-200px) scale(0) rotate(60deg) translateZ(0);
     opacity: 0;
-    filter: blur(20px);
+    filter: blur(8px);
   }
   35%,
   65% {
     opacity: 1;
     filter: blur(0);
-    transform: translateX(0px) scale(1) rotate(0);
+    transform: translateX(0px) scale(1) rotate(0) translateZ(0);
   }
 }
 
 .fadeBtoT {
   animation: blurBottomtoTopAnimation;
   animation-timeline: view();
+  will-change: transform, filter, opacity;
 }
 
 @keyframes blurBottomtoTopAnimation {
   from {
-    transform: translatey(200px) scale(0);
+    transform: translateY(200px) scale(0) translateZ(0);
     opacity: 0;
-    filter: blur(20px);
+    filter: blur(8px);
   }
   35%,
   65% {
     opacity: 1;
     filter: blur(0);
-    transform: translatey(0px) scale(1);
+    transform: translateY(0px) scale(1) translateZ(0);
   }
 }
