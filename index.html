@@ -253,7 +253,7 @@
       <div class="skill-box">
         <div class="designer">
  
-          <h1 class="gradient fadeRight-M"> Designer <i class='bx  bx-laptop-alt' style='color:#FFFFFF'></i> </h1>
+          <h1 class="gradient"> Designer <i class='bx  bx-laptop-alt' style='color:#FFFFFF'></i> </h1>
           <p class="autoDisplay">I’m a passionate Full-Stack & AI Developer who builds clean, responsive,
             and user-friendly .I focus on creating fast,
             accessible, and visually appealing websites using modern web
@@ -262,7 +262,7 @@
         <img class="autoDisplay brain-pic" src="images/brain4.png" loading="lazy" alt="skills-img">
 
         <div class="coder">
-          <h1 class="gradient fadeLeft-M"> Coder <i class='bxr  bx-code' style='color:#FFFFFF'></i> </h1>
+          <h1 class="gradient"> Coder <i class='bxr  bx-code' style='color:#FFFFFF'></i> </h1>
           <p class="autoDisplay">I write clean, efficient, and maintainable code with a strong focus on structure and
             refactoring.
             I use solid data structures and algorithms to build scalable and reliable solutions.
@@ -537,35 +537,32 @@
 
       <div class="contact-container">
         <div class="message-form">
-
-
-          <form class="contact-form">
-
-
+          <form action="https://api.web3forms.com/submit" method="POST">
             <h2>
               lets talk
             </h2>
             <p>Whether you're looking to build a new website, improve your exixting platform, or bring a unique project
               to life,i'm here to help.</p>
-
+            <input type="hidden" name="access_key" value="3f7d192a-2b18-4720-a0e3-7ed5472911bd">
             <label for="name">Full Name</label>
-            <input id="name-input" type="text">
-
+            <input type="text" name="name" required>
             <label>
               Email
             </label>
-            <input id="mail-input" type="email">
+            <input type="email" name="email" required>
             <label>Message</label>
-            <input id="message-input" type="text" maxlength="100">
+            <textarea class="text-area" name="Message" required></textarea>
+           <button type="submit">Send<i class='bx  bx-paper-plane' style='color:#FFFFFF'></i> </button>
+    
+        </form>
 
-            <button>Send<i class='bx  bx-paper-plane' style='color:#FFFFFF'></i> </button>
-
-          </form>
 
 
+      
 
 
           <div class="contact-box">
+
             <button class="linkBtn" data-url="https://wa.me/917358469953"><svg xmlns="http://www.w3.org/2000/svg"
                 width="40" height="40" fill="#FFFFFF" viewBox="0 0 24 24">
                 <!--Boxicons v3.0.6 https://boxicons.com | License  https://docs.boxicons.com/free-->
